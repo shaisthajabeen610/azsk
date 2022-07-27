@@ -1,1 +1,16 @@
+steps:
+name: Azsubscanner
+on: [push]
+jobs:
+  check-scanner-report; 
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@master
+    - name: SubscriptionSecScan.exe
+      uses: Saikishoretayi/Azsubscanner
+
+    - name: SubscriptionSecScan Push
+      run: SubscriptionSecScan push *.exe
 
