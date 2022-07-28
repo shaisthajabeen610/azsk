@@ -1,16 +1,19 @@
-steps:
+
 name: Azsubscanner
-on: [push]
+on:
+   public:
+     branches: [main]
 jobs:
-  check-scanner-report; 
-    runs-on: windows-latest
+  build: 
+    name: Run script
+    runs-on: ubuntu-latest
 
     steps:
 
-    - uses: actions/checkout@master
-    - name: SubscriptionSecScan.exe
-      uses: Saikishoretayi/Azsubscanner
+    - uses: actions/checkout@v1
+    - name: script
 
-    - name: SubscriptionSecScan Push
-      run: SubscriptionSecScan push *.exe
+
+      run: ./scanner.ps1
+      shell: pwsh
 
