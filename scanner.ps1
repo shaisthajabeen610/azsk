@@ -6,7 +6,7 @@ Connect-AzAccount -UseDeviceAuthentication
  $Id = Get-Azsubscription
  
 # Install-Module AzSK -Scope CurrentUser -SkipPublisherCheck  -Force
-# Import-Module AzSK 
+Import-Module AzSK 
 Install-Module -Name AzSK -Scope CurrentUser -AllowClobber -Force -SkipPublisherCheck
 
 import-module az.accounts -Force 
