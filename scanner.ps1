@@ -7,7 +7,7 @@ Connect-AzAccount -UseDeviceAuthentication
  
 # Install-Module AzSK -Scope CurrentUser -SkipPublisherCheck  -Force
 # Import-Module AzSK 
-Install-Module -Name AzSK -Scope CurrentUser -AllowClobber -Force 
+Install-Module -Name AzSK -Scope CurrentUser -AllowClobber -Force -SkipPublisherCheck
 
 import-module az.accounts -AllowClobber -Force 
 
