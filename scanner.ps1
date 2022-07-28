@@ -9,15 +9,9 @@ Connect-AzAccount -UseDeviceAuthentication
 # Import-Module AzSK 
 Install-Module -Name AzSK -Scope CurrentUser -AllowClobber -Force 
 
+import-module az.accounts
 
 
-
-if (Get-Module -Name AzSK -ListAvailable) {
-
-Import-Module AzSK -ErrorAction SilentlyContinue #workaround
-Import-Module AzSK
-Import-EditorCommand -Module AzSK
-}
 
 Set-AzSKPolicySettings -AutoUpdate On
  foreach ($Ids in $Id)
