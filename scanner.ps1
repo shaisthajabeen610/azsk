@@ -1,4 +1,5 @@
-﻿  Install-Module Az  -AllowClobber -Force
+﻿  Uninstall-AzureRm
+   Install-Module Az  -AllowClobber -Force
 Import-Module Az   
 Uninstall-AzureRm
 
