@@ -3,7 +3,7 @@ Import-Module Az   
 Uninstall-AzureRm
 
 az upgrade
-Connect-AzAccount -UseDeviceAuthentication
+Connect-AzAccount -TenantId 798b4769-c7e2-489c-98b8-362ceda12432  -UseDeviceAuthentication
  $Id = Get-Azsubscription
  
 # Install-Module AzSK -Scope CurrentUser -SkipPublisherCheck  -Force
