@@ -10,5 +10,5 @@ azcopy copy "$draft/$children" "https://azsk1.blob.core.windows.net/azsk/?sv=202
  
  }
 
-# Remove-Item $draft
+# Remove-Item $draft    
  
