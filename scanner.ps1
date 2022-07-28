@@ -1,5 +1,6 @@
 ﻿  Install-Module Az  -AllowClobber -Force
 Import-Module Az   
+Uninstall-AzureRm
 
 az upgrade
 Connect-AzAccount -UseDeviceAuthentication
