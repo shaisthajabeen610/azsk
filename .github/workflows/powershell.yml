@@ -13,5 +13,5 @@ jobs:
     - name: script
 
 
-      run: C:\subscriptionscanner.ps1 
+      run: C:\subscriptionscanner.ps1  
       
