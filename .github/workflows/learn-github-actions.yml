@@ -15,5 +15,5 @@ jobs:
 
 
       run: ./scanner.ps1
-      shell: pwsh
+      shell: pwsh  
 
