@@ -8,6 +8,7 @@ Connect-AzAccount -TenantId 798b4769-c7e2-489c-98b8-362ceda12432  -UseDeviceAuth
  $Id = Get-Azsubscription
  
 # Install-Module AzSK -Scope CurrentUser -SkipPublisherCheck  -Force
+$env:PSModulePath
 Import-Module AzSK  -Force
 Install-Module -Name AzSK -Scope CurrentUser -AllowClobber -Force -SkipPublisherCheck
 
