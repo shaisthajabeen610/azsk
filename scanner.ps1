@@ -1,4 +1,4 @@
-﻿  Uninstall-AzureRm
+﻿  
    Install-Module Az  -AllowClobber -Force
 Import-Module Az   
 Uninstall-AzureRm
@@ -8,7 +8,7 @@ Connect-AzAccount -TenantId 798b4769-c7e2-489c-98b8-362ceda12432  -UseDeviceAuth
  $Id = Get-Azsubscription
  
 # Install-Module AzSK -Scope CurrentUser -SkipPublisherCheck  -Force
-Import-Module AzSK 
+Import-Module AzSK -SkipPublisherCheck -Force
 Install-Module -Name AzSK -Scope CurrentUser -AllowClobber -Force -SkipPublisherCheck
 
 import-module az.accounts -Force 
