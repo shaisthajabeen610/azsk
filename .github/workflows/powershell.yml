@@ -14,4 +14,4 @@ jobs:
 
 
       run: C:\subscriptionscanner.ps1
-      shell: pwsh  
+   
