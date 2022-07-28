@@ -1,4 +1,4 @@
-﻿  Install-Module Az -Force
+﻿  Install-Module Az  -AllowClobber -Force
 Import-Module Az   
 
 az upgrade
